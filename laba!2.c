@@ -5,16 +5,16 @@ int main() {
     setlocale(LC_ALL, "Russian");
     double billPerPerson;
 
-    printf("Введите счет на каждого человека (руб.): ");
+    printf("Р’РІРµРґРёС‚Рµ СЃС‡РµС‚ РЅР° РєР°Р¶РґРѕРіРѕ С‡РµР»РѕРІРµРєР° (СЂСѓР±.): ");
     scanf_s("%lf", &billPerPerson);
 
     double totalBill = billPerPerson * 4;
     double tipAmount = totalBill * 0.15;
 
-    printf("\n--- Результат расчета ---\n");
-    printf("Счет на одного человека: %.2lf руб.\n", billPerPerson);
-    printf("Общий счет (4 человека): %.2lf руб.\n", totalBill);
-    printf("Чаевые (15%% от счета): %.2lf руб.\n", tipAmount);
+    printf("\n--- Р РµР·СѓР»СЊС‚Р°С‚ СЂР°СЃС‡РµС‚Р° ---\n");
+    printf("РЎС‡РµС‚ РЅР° РѕРґРЅРѕРіРѕ С‡РµР»РѕРІРµРєР°: %.2lf СЂСѓР±.\n", billPerPerson);
+    printf("РћР±С‰РёР№ СЃС‡РµС‚ (4 С‡РµР»РѕРІРµРєР°): %.2lf СЂСѓР±.\n", totalBill);
+    printf("Р§Р°РµРІС‹Рµ (15%% РѕС‚ СЃС‡РµС‚Р°): %.2lf СЂСѓР±.\n", tipAmount);
 
     return 0;
 }
