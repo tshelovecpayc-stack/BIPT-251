@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
 
@@ -6,7 +7,7 @@ int main() {
     double billPerPerson;
 
     printf("Введите счет на каждого человека (руб.): ");
-    scanf_s("%lf", &billPerPerson);
+    scanf("%lf", &billPerPerson);
 
     double totalBill = billPerPerson * 4;
     double tipAmount = totalBill * 0.15;
@@ -18,3 +19,4 @@ int main() {
 
     return 0;
 }
+
