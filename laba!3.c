@@ -1,7 +1,6 @@
 ﻿#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <locale.h>
-#include <windows.h>
 
 int main() {
     setlocale(LC_ALL, "Russian");
@@ -33,4 +32,5 @@ int main() {
     printf("Площадь боковой поверхности: %.2lf\n", surfaceArea);
 
     return 0;
+
 }
