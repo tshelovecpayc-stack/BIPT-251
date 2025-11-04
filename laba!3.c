@@ -2,32 +2,21 @@
 #include <stdio.h>
 #include <locale.h>
 
-    int main() {
-        setlocale(LC_ALL, "Russian");
-        double pounds;
-        double kg, grams, tons;
+int main() {
+    setlocale(LC_ALL, "Russian");
+    double bit, kbyte;
 
-        // Ввод данных
-        printf("Введите вес в фунтах: ");
-        scanf("%lf", &pounds);
+    // бит/с → Кбайт/с
+    printf("Введите скорость в бит/с: ");
+    scanf("%lf", &bit);
+    kbyte = bit / 8192;
+    printf("%.2f бит/с = %.6f Кбайт/с\n\n", bit, kbyte);
 
-        // Проверка корректности ввода
-        if (pounds <= 0) {
-            printf("Ошибка: вес должен быть положительным числом!\n");
-            return 1;
-        }
+    // Кбайт/с → бит/с  
+    printf("Введите скорость в Кбайт/с: ");
+    scanf("%lf", &kbyte);
+    bit = kbyte * 8192;
+    printf("%.2f Кбайт/с = %.2f бит/с\n", kbyte, bit);
 
-        // Вычисления
-        kg = pounds * 0.453592;      // 1 фунт = 0.453592 кг
-        grams = kg * 1000;           // 1 кг = 1000 грамм
-        tons = kg / 1000;            // 1 тонна = 1000 кг
-
-        // Вывод результатов
-        printf("\n--- Результаты пересчета ---\n");
-        printf("Фунты: %.2lf\n", pounds);
-        printf("Килограммы: %.4lf\n", kg);
-        printf("Граммы: %.2lf\n", grams);
-        printf("Тонны: %.6lf\n", tons);
-
-        return 0;
-    }
+    return 0;
+} 
