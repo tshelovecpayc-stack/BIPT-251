@@ -6,55 +6,55 @@ int main() {
     setlocale(LC_ALL, "Russian");
     int number;
 
-    printf("=== ПЕРЕВОД ЧИСЕЛ В СЛОВА ===\n");
-    printf("Введите число от 1 до 13: ");
+    printf("=== РџР•Р Р•Р’РћР” Р§РРЎР•Р› Р’ РЎР›РћР’Рђ ===\n");
+    printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 1 РґРѕ 13: ");
     scanf("%d", &number);
 
-    printf("Результат: %d - ", number);
+    printf("Р РµР·СѓР»СЊС‚Р°С‚: %d - ", number);
 
-    // Перевод числа в слово
+    // РџРµСЂРµРІРѕРґ С‡РёСЃР»Р° РІ СЃР»РѕРІРѕ
     switch (number) {
     case 1:
-        printf("один");
+        printf("РѕРґРёРЅ");
         break;
     case 2:
-        printf("два");
+        printf("РґРІР°");
         break;
     case 3:
-        printf("три");
+        printf("С‚СЂРё");
         break;
     case 4:
-        printf("четыре");
+        printf("С‡РµС‚С‹СЂРµ");
         break;
     case 5:
-        printf("пять");
+        printf("РїСЏС‚СЊ");
         break;
     case 6:
-        printf("шесть");
+        printf("С€РµСЃС‚СЊ");
         break;
     case 7:
-        printf("семь");
+        printf("СЃРµРјСЊ");
         break;
     case 8:
-        printf("восемь");
+        printf("РІРѕСЃРµРјСЊ");
         break;
     case 9:
-        printf("девять");
+        printf("РґРµРІСЏС‚СЊ");
         break;
     case 10:
-        printf("десять");
+        printf("РґРµСЃСЏС‚СЊ");
         break;
     case 11:
-        printf("одиннадцать");
+        printf("РѕРґРёРЅРЅР°РґС†Р°С‚СЊ");
         break;
     case 12:
-        printf("двенадцать");
+        printf("РґРІРµРЅР°РґС†Р°С‚СЊ");
         break;
     case 13:
-        printf("тринадцать");
+        printf("С‚СЂРёРЅР°РґС†Р°С‚СЊ");
         break;
     default:
-        printf("ОШИБКА: число должно быть от 1 до 13!");
+        printf("РћРЁРР‘РљРђ: С‡РёСЃР»Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РѕС‚ 1 РґРѕ 13!");
         break;
     }
 
